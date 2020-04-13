@@ -1,0 +1,34 @@
+#!name=Sign in
+#!desc=Script
+#!system=ios
+
+[Script]
+# >腾讯视频签到
+videoqq.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js,script-update-interval=0,cronexp=30 8 * * *,type=cron
+# >b站签到
+bilibili.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js,script-update-interval=0,cronexp=37 8 * * *,type=cron
+bilibili.silver2coin.js = type=cron,cronexp=45 1 0 * * *,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.silver2coin.js,script-update-interval=0
+# >人人视频签到
+rrtv.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/rrtv/rrtv.js,script-update-interval=0,cronexp=10 8 * * *,type=cron
+# >网易云音乐签到
+neteasemusic.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.js,script-update-interval=0,cronexp=46 8 * * *,type=cron
+# >联通营业厅签到
+10010.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.js,script-update-interval=0,cronexp=51 8 * * *,type=cron
+# >爱奇艺视频签到
+iQIYI_DailyBonus.js = script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/iQIYI-DailyBonus/iQIYI_DailyBonus.js,script-update-interval=0,cronexp=52 8 * * *,type=cron
+# >京东商城签到
+JD_DailyBonus.js = script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,script-update-interval=0,cronexp=4 0 * * *,type=cron
+# >吾爱破解签到
+52pojie.js = script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/52pojieDailyBonus/52pojie.js,script-update-interval=0,cronexp=6 8 * * *,type=cron
+# >什么值得买签到
+smzdm.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/smzdm.js,script-update-interval=0,cronexp=37 8 * * *,type=cron
+# >wps签到
+wps.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.js,script-update-interval=0,cronexp=10 8 * * *,type=cron
+# >美团签到
+meituan.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/meituan/meituan.js,script-update-interval=0,cronexp=10 8 * * *,type=cron
+# >喜马拉雅
+ximalaya.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.js,script-update-interval=0,cronexp=10 8 * * *,type=cron
+# >字幕组
+zimuzu.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zimuzu/zimuzu.js,cronexp=10 0 0 * * *,type=cron
+# >贴吧签到
+sign_baidu_tieba_v2.js = type=cron,cronexp="0 0,1,2 0 * * *",script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/sazs34/task/sign_baidu_tieba_v2.js,script-update-interval=0
