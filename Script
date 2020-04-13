@@ -1,0 +1,49 @@
+#!name=Script
+#!desc=To advertise
+#!system=ios
+
+[Script]
+# >动漫疯
+Bahamut.js = script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bahamut.js,pattern=https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php,type=http-request
+Bahamut.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bahamut.js,pattern=https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php,type=http-response
+# >微信公众号去广告
+WeChat.js = script-path=https://Choler.github.io/Surge/Script/WeChat.js,pattern=^https://mp\.weixin\.qq\.com/mp/getappmsgad,type=http-request
+# >微博去广告
+wb_launch.js = requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_launch.js,pattern=^https?://(sdk|wb)app\.uve\.weibo\.com(/interface/sdk/sdkad.php|/wbapplua/wbpullad.lua),type=http-response
+wb_ad.js = requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/wb_ad.js,pattern=^https?://m?api\.weibo\.c(n|om)/2/(statuses/(unread|extend|positives/get|(friends|video)(/|_)(mix)?timeline)|stories/(video_stream|home_list)|(groups|fangle)/timeline|profile/statuses|comments/build_comments|photo/recommend_list|service/picfeed|searchall|cardlist|page|!/photos/pic_recommend_status),type=http-response
+# >奈飞评分
+nf_rating.js = script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D,type=http-request
+nf_rating.js = requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D,type=http-response
+# >淘宝比价
+tb_price.js = requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js,pattern=^http://amdc\.m\.taobao\.com/amdc/mobileDispatch,type=http-response
+tb_price.js = requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,type=http-response
+# >京东比价
+jd_price.js = requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig),type=http-response
+# >人人视频解锁原画
+rrtv.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/rrtv.js,pattern=^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail),type=http-response
+# >知乎去广告
+surge%20zhihu%20feed.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20feed.js,pattern=https://api.zhihu.com/moments/recommend,type=http-response
+surge%20zhihu%20recommend.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20recommend.js,pattern=https://api.zhihu.com/topstory/recommend,type=http-response
+surge%20zhihu%20answer.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20answer.js,pattern=https://api.zhihu.com/v4/questions,type=http-response
+surge%20zhihu%20people.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20people.js,pattern=https://api.zhihu.com/people/,type=http-response
+# >b站去广告
+surge%20bilibili%20space.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20space.js,pattern=https://app.bilibili.com/x/v2/space\?access_key,type=http-response
+surge%20bilibili%20tab.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20tab.js,pattern=https://app.bilibili.com/x/resource/show/tab\?access_key,type=http-response
+surge%20bilibili%20feed.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20feed.js,pattern=https://app.bilibili.com/x/v2/feed/index\?access_key,type=http-response
+surge%20bilibili%20account.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20account.js,pattern=https://app.bilibili.com/x/v2/account/mine\?access_key,type=http-response
+surge%20bilibili%20view%20relate.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20view%20relate.js,pattern=https://app.bilibili.com/x/v2/view\?access_key,type=http-response
+surge%20bilibili%20reply.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20reply.js,pattern=https://api.bilibili.com/x/v2/reply/main\?access_key,type=http-response
+surge%20bilibili%20live.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20live.js,pattern=https://api.live.bilibili.com/xlive/app-room/v1/index/getInfoByRoom\?access_key,type=http-response
+# >抖音去水印
+Aweme.js = script-path=https://Choler.github.io/Surge/Script/Aweme.js,pattern=^https:\/\/.*\.amemv\.com\/aweme\/v.*\/(feed|post),type=http-request
+Aweme.js = requires-body=true,script-path=https://Choler.github.io/Surge/Script/Aweme.js,pattern=^https:\/\/.*\.amemv\.com\/aweme\/v.*\/(feed|post),type=http-response
+# >扫描全能王
+CamScanner.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js,pattern=https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,type=http-response
+# >抖音
+Aweme.js = script-path=https://Choler.github.io/Surge/Script/Aweme.js,pattern=^https:\/\/.*\.amemv\.com\/aweme\/v.*\/(feed|post),type=http-request
+Aweme.js = requires-body=true,script-path=https://Choler.github.io/Surge/Script/Aweme.js,pattern=^https:\/\/.*\.amemv\.com\/aweme\/v1.*\/(feed|post),type=http-response
+Aweme.js = requires-body=1,max-size=-1,script-path=https://Choler.github.io/Surge/Script/Aweme.js,pattern=^https://[\s\S]*\/aweme/v1/(feed|aweme/post|follow/feed)/,type=http-response
+# >微信
+WeChat.js = script-path=https://Choler.github.io/Surge/Script/WeChat.js,pattern=^https://mp\.weixin\.qq\.com/mp/getappmsgad,type=http-request
+# >头条
+Toutiao.js = requires-body=1,max-size=-1,script-path=https://Choler.github.io/Surge/Script/Toutiao.js,pattern=^https?://[\s\S]*\.snssdk\.com/api/news/feed/v88/,type=http-response
