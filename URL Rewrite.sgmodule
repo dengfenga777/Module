@@ -2,7 +2,8 @@
 #!desc=302 Redirect & Advertising Block
 #!system=ios
 [URL Rewrite]
-"^https://(.*).amemv.com/aweme/v\d/feed/ url 302 https://$1.amemv.com/aweme/v1/feed/ ^https:\/\/.*\.amemv\.com\/aweme\/v1.*\/(feed|post) url script-response-body Aweme.js"  header
+"^https://(.*).amemv.com/aweme/v\d/feed/ url 302 https://$1.amemv.com/aweme/v1/feed/ 
+^https:\/\/.*\.amemv\.com\/aweme\/v1.*\/(feed|post) url script-response-body Aweme.js"  header
 # > Redirect Google Service
 ^https?:\/\/(www.)?g\.cn https:\/\/www.google.com 302
 ^https?:\/\/(www.)?google\.cn https:\/\/www.google.com 302

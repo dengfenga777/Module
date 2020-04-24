@@ -2,7 +2,7 @@
 #!desc=To advertise
 #!system=ios
 [MITM]
-hostname = %APPEND%  api.gamer.com.tw,mp.weixin.qq.com,*.snssdk.com,ios.prod.ftl.netflix.com,api.m.jd.com,trade-acs.m.taobao.com,www.zhihu.com,api.zhihu.com,app.bilibili.com, api.bilibili.com, api.live.bilibili.com, api.rr.tv,ap*.intsig.net,*.amemv.com, *.snssdk.com
+hostname = %APPEND%  api.gamer.com.tw,mp.weixin.qq.com,*.snssdk.com,ios.prod.ftl.netflix.com,api.m.jd.com,trade-acs.m.taobao.com,www.zhihu.com,api.zhihu.com,app.bilibili.com, api.bilibili.com, api.live.bilibili.com, api.rr.tv,ap*.intsig.net,*.amemv.com
 
 [Script]
 # >动漫疯
@@ -57,7 +57,6 @@ CamScanner.js = requires-body=1,max-size=0,script-path=https://raw.githubusercon
 # >抖音
 Aweme.js = script-path=https://Choler.github.io/Surge/Script/Aweme.js,pattern=^https:\/\/.*\.amemv\.com\/aweme\/v.*\/(feed|post),type=http-request
 Aweme.js = requires-body=true,script-path=https://Choler.github.io/Surge/Script/Aweme.js,pattern=^https:\/\/.*\.amemv\.com\/aweme\/v1.*\/(feed|post),type=http-response
-
 Aweme.js = requires-body=1,max-size=-1,script-path=https://Choler.github.io/Surge/Script/Aweme.js,pattern=^https://[\s\S]*\/aweme/v1/(feed|aweme/post|follow/feed)/,type=http-response
 
 # >微信
