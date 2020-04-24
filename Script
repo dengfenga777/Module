@@ -2,7 +2,7 @@
 #!desc=To advertise
 #!system=ios
 [MITM]
-hostname = %APPEND%  api.gamer.com.tw,mp.weixin.qq.com,*.snssdk.com,ios.prod.ftl.netflix.com,api.m.jd.com，trade-acs.m.taobao.com,www.zhihu.com,api.zhihu.com,app.bilibili.com, api.bilibili.com, api.live.bilibili.com, api.rr.tv,ap*.intsig.net,*.amemv.com, *.snssdk.com
+hostname = %APPEND%  api.gamer.com.tw,mp.weixin.qq.com,*.snssdk.com,ios.prod.ftl.netflix.com,api.m.jd.com,trade-acs.m.taobao.com,www.zhihu.com,api.zhihu.com,app.bilibili.com, api.bilibili.com, api.live.bilibili.com, api.rr.tv,ap*.intsig.net,*.amemv.com, *.snssdk.com
 
 [Script]
 # >动漫疯
