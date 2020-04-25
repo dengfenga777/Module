@@ -1,0 +1,7 @@
+#!name=去水印
+#!desc=抖音
+#!system=ios
+[Script]
+# >抖音去水印
+Aweme.js = script-path=https://Choler.github.io/Surge/Script/Aweme.js,pattern=^https:\/\/.*\.amemv\.com\/aweme\/v.*\/(feed|post),type=http-request
+Aweme.js = requires-body=true,script-path=https://Choler.github.io/Surge/Script/Aweme.js,pattern=^https:\/\/.*\.amemv\.com\/aweme\/v.*\/(feed|post),type=http-response
