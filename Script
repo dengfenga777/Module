@@ -49,12 +49,11 @@ surge%20bilibili%20view%20relate.js = requires-body=1,max-size=0,script-path=htt
 surge%20bilibili%20reply.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20reply.js,pattern=https://api.bilibili.com/x/v2/reply/main\?access_key,type=http-response
 
 surge%20bilibili%20live.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20live.js,pattern=https://api.live.bilibili.com/xlive/app-room/v1/index/getInfoByRoom\?access_key,type=http-response
-# >抖音去水印
-Aweme.js = script-path=https://Choler.github.io/Surge/Script/Aweme.js,pattern=^https:\/\/.*\.amemv\.com\/aweme\/v.*\/(feed|post),type=http-request
-Aweme.js = requires-body=true,script-path=https://Choler.github.io/Surge/Script/Aweme.js,pattern=^https:\/\/.*\.amemv\.com\/aweme\/v.*\/(feed|post),type=http-response
+
 # >扫描全能王
 CamScanner.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/CamScanner.js,pattern=https:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property\?,type=http-response
-
+# >抖音
+Aweme.js = script-path=https://choler.github.io/Surge/Script/Aweme.js,type=http-request,pattern=^https:\/\/.*\.(amemv|musical)\.(com|ly)\/aweme\/v.*\/(feed|post),requires-body=1,max-size=0
 # >微信
 WeChat.js = script-path=https://Choler.github.io/Surge/Script/WeChat.js,pattern=^https://mp\.weixin\.qq\.com/mp/getappmsgad,type=http-request
 # >头条
