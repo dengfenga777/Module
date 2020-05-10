@@ -2,29 +2,14 @@
 #!desc=To advertise
 #!system=ios
 [MITM]
-hostname = %APPEND%  api.gamer.com.tw,mp.weixin.qq.com,*.snssdk.com,ios.prod.ftl.netflix.com,api.m.jd.com,trade-acs.m.taobao.com,www.zhihu.com,api.zhihu.com,app.bilibili.com, api.bilibili.com, api.live.bilibili.com, api.rr.tv,ap*.intsig.net,*.amemv.com,*.musical.ly,api.weibo.cn, mapi.weibo.com, *.uve.weibo.com
+hostname = %APPEND%  api.gamer.com.tw,mp.weixin.qq.com,*.snssdk.com,www.zhihu.com,api.zhihu.com,app.bilibili.com, api.bilibili.com, api.live.bilibili.com, api.rr.tv,ap*.intsig.net,*.amemv.com,*.musical.ly,api.weibo.cn, mapi.weibo.com, *.uve.weibo.com
 
 [Script]
 # >动漫疯
 Bahamut.js = script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bahamut.js,pattern=https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php,type=http-request
 Bahamut.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bahamut.js,pattern=https:\/\/api\.gamer\.com\.tw\/mobile_app\/anime\/v3\/token\.php,type=http-response
-# >微博去广告
-
-
-# >奈飞评分
-nf_rating.js = requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/nf_rating.js,pattern=^https?://ios\.prod\.ftl\.netflix\.com/iosui/user/.+path=%5B%22videos%22%2C%\d+%22%2C%22summary%22%5D,type=http-response
-
-# >淘宝比价
-tb_price.js = requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js,pattern=^http://amdc\.m\.taobao\.com/amdc/mobileDispatch,type=http-response
-
-tb_price.js = requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/tb_price.js,pattern=^https?://trade-acs\.m\.taobao\.com/gw/mtop\.taobao\.detail\.getdetail,type=http-response
-
-# >京东比价
-jd_price.js = requires-body=1,script-path=https://raw.githubusercontent.com/yichahucha/surge/master/jd_price.js,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig),type=http-response
-
 # >人人视频解锁原画
 rrtv.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/nzw9314/QuantumultX/master/Script/rrtv.js,pattern=^https:\/\/api\.rr\.tv(\/user\/privilege\/list|\/ad\/getAll|\/rrtv-video\/v4plus\/season\/detail),type=http-response
-
 # >知乎去广告
 surge%20zhihu%20feed.js = requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20zhihu%20feed.js,pattern=https://api.zhihu.com/moments/recommend,type=http-response
 
