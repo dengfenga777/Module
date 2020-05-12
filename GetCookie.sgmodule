@@ -38,7 +38,7 @@ JD_DailyBonus.js = script-path=https://raw.githubusercontent.com/NobyDa/Script/m
 
 # > 百度贴吧
 # 先登录,浏览器访问一下: https://tieba.baidu.com 或者 https://tieba.baidu.com/index/
-tieba.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/tieba/tieba.cookie.js,type=http-request,pattern=^https?:\/\/tieba\.baidu\.com\/?.?
+贴吧获取Cookie = type=http-request,pattern=https?:\/\/c\.tieba\.baidu\.com\/c\/s\/login,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/BDTieBa-DailyBonus/TieBa.js
 
 
 # > 人人视频
@@ -49,11 +49,11 @@ videoqq.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scr
 zimuzu.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zimuzu/zimuzu.cookie.js,pattern=^https?:\/\/(www\.)?rrys2019\.com\/?.?,type=http-request
 zimuzu.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/zimuzu/zimuzu.cookie.js,pattern=^http:\/\/ios.zmzapi.com\/index.php.*a=(mobile_)?login,type=http-request
 # >吾爱破解签到
-Get-Cookie.js = script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/52pojieDailyBonus/Get-Cookie.js,pattern=https:\/\/www\.52pojie\.cn\/home\.php\?,type=http-request
+吾爱获取Cookie = type=http-request,pattern=https:\/\/www\.52pojie\.cn\/home\.php\?,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/52pojie-DailyBonus/52pojie.js
 # >京东商城签到
 JD_DailyBonus.js = max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js,pattern=https:\/\/api\.m\.jd\.com\/client\.action.*functionId=signBean,type=http-request
 # >爱奇艺视频签到
-iQIYI_GetCookie.js = type=http-request,pattern=https?:\/\/.*\.iqiyi\.com\/.*authcookie=,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/iQIYI-DailyBonus/iQIYI_GetCookie.js
+爱奇艺获取Cookie = type=http-request,pattern=https?:\/\/.*\.iqiyi\.com\/.*authcookie=,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
 
 # >网易云音乐签到
 neteasemusic.cookie.js = script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/neteasemusic/neteasemusic.cookie.js,pattern=^https?:\/\/music\.163\.com\/?.?,type=http-request
